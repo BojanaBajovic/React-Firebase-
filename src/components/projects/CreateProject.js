@@ -23,8 +23,8 @@ class CreateProject extends Component {
     const { auth } = this.props;
     if (!auth.uid) return <Redirect to='/signin' /> 
     return (
-      <div className="container">
-        <form className="white" onSubmit={this.handleSubmit}>
+      <div className="container" style={{marginTop: 20, borderRadius: 30, padding: 50 }}>
+        <form className="white" onSubmit={this.handleSubmit} style={{borderRadius: 20, padding: 50 }}>
           <h5 className="grey-text text-darken-3">Create a New Project</h5>
           <div className="input-field">
             <input type="text" id='title' onChange={this.handleChange} />
